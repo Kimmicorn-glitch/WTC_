@@ -1,0 +1,20 @@
+def coke_machine():
+    amount_due = 50
+
+    while amount_due > 0:
+        print("Amount Due:", amount_due)
+        coin = input("Insert Coin eg 5,10,25: ")  # <-- keep as string for now
+
+        if coin.isdigit():
+            coin = int(coin)  # convert after checking
+            if coin in [5, 10, 25]:
+                amount_due -= coin
+            else:
+                print("Invalid coin. Please insert 5, 10, or 25 cents.")
+        else:
+            print("Invalid input. Please enter a number.")
+
+    print("Change Owed:", abs(amount_due))
+
+
+coke_machine()

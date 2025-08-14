@@ -12,11 +12,11 @@ From quirky programs like faces.py and playback.py to practical exercises like b
 
 2. **Input validation nightmares:** User input is tricky. I repeatedly had to handle empty strings, invalid numbers, and unexpected formats. Lesson learned: always sanitize before you analyze.  
 
-3. **Transformation logic:** Programs like `faces.py` and `twttr.py` taught me that the order of operations matters—a lot. One wrong replacement and your emojis turn into gibberish.  
+3. **Transformation logic:** Programs like faces.py and twttr.py taught me that the order of operations matters—a lot. One wrong replacement and your emojis turn into gibberish.  
 
-4. **Time comparisons and formatting:** In `meal.py` and `fuel.py`, comparing hours and fractions was a puzzle. Converting everything to consistent formats saved the day.  
+4. **Time comparisons and formatting:** In meal.py and fuel.py, comparing hours and fractions was a puzzle. Converting everything to consistent formats saved the day.  
 
-5. **APIs and real-world data:** `bitcoin.py` was simultaneously thrilling and terrifying. Handling requests, exceptions, and JSON data tested my attention to detail—and my patience.  
+5. **APIs and real-world data:** bitcoin.py was simultaneously thrilling and terrifying. Handling requests, exceptions, and JSON data tested my attention to detail—and my patience, only to find out there were fixed variables ("FAKE_KEY")
 
 6. **Avoiding overcomplication:** It’s tempting to write nested loops for everything. Many times, the simplest solution (built-in functions, single loops, dictionaries) was the best.  
 

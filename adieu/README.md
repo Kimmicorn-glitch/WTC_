@@ -4,12 +4,12 @@
 Collects names until EOF, then says goodbye to everyone in one grammatically correct sentence. Think "Goodbye, Alice, Bob, and Charlie" — the polite way to end a party.
 
 ## How It Works
-1. Keep prompting the user for names until they press `Ctrl+D` (EOF).
+1. Keep prompting the user for names until they press Ctrl+D (EOF).
 2. Store names in a list.
 3. Join names into a sentence:
-   - One name → "Adieu, adieu, to X"
-   - Two names → "Adieu, adieu, to X and Y"
-   - Three or more → "Adieu, adieu, to X, Y, and Z"
+   - One name -> "Adieu, adieu, to X"
+   - Two names -> "Adieu, adieu, to X and Y"
+   - Three or more -> "Adieu, adieu, to X, Y, and Z"
 4. Print the result with correct commas and "and" placement.
 
 ## Struggles

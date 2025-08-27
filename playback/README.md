@@ -9,9 +9,9 @@ Slows down a sentence by inserting ellipses (or any other separator) between wor
 
  
 ## How I solved it
-- Used `.split()` to remove multiple spaces and `separator.join(words)` to build output.
+- Used .split() to remove multiple spaces and `separator.join(words)` to build output.
 
-## Fun fact / Humour
+## Fun fact 
 Perfect for dramatic presentations or passive-aggressive Slack messages. Use responsibly. ????
 
 ## How to run

@@ -3,7 +3,7 @@
 ## What it does
 Slows down a sentence by inserting ellipses (or any other separator) between words to mimic slow, dramatic playback.
 
-## What I struggled with (detailed)
+## What I struggled with 
 - Maintaining punctuation while inserting separators.
 - Not duplicating separators for multiple spaces.
 

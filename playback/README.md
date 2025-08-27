@@ -1,6 +1,6 @@
 # Playback (slow text playback)
 
-##What it does
+## What it does
 Slows down a sentence by inserting ellipses (or any other separator) between words to mimic slow, dramatic playback.
 
 ## What I struggled with (detailed)

@@ -1,6 +1,10 @@
 # taqueria.py
 
+<<<<<<< HEAD
 ## Purpose
+=======
+##  Purpose
+>>>>>>> 3b050fe2e20274ff803cf130902fb592b11a4943
 Takes taco orders from a fixed menu, adds up the total, and shows the running cost until the user is done.
 
 ## How It Works
@@ -12,13 +16,17 @@ Takes taco orders from a fixed menu, adds up the total, and shows the running co
 
 ## Struggles
 - Handling case insensitivity,"Burrito" and "burrito" should be the same.
-- Program kept breaking when I typed an invalid item.
+- Program kept breaking when I typed an invalid item and with valid items.
 - Forgetting to format prices with two decimal places.
 
 ## Solutions
 - Used .strip().title() or .lower() to normalize input.
 - Added a check to skip invalid menu items instead of erroring out.
+<<<<<<< HEAD
 - Used f"{total:.2f}" for perfect money formatting.
+=======
+- Used f"{total:$ .2f}" for perfect money formatting.
+>>>>>>> 3b050fe2e20274ff803cf130902fb592b11a4943
 
 ## Sources
 - CS50P Problem Set — Taqueria

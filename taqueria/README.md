@@ -1,6 +1,6 @@
 # taqueria.py
 
-## 🎯 Purpose
+## Purpose
 Takes taco orders from a fixed menu, adds up the total, and shows the running cost until the user is done.
 
 ## How It Works
@@ -16,9 +16,9 @@ Takes taco orders from a fixed menu, adds up the total, and shows the running co
 - Forgetting to format prices with two decimal places.
 
 ## Solutions
-- Used `.strip().title()` or `.lower()` to normalize input.
+- Used .strip().title() or .lower() to normalize input.
 - Added a check to skip invalid menu items instead of erroring out.
-- Used `f"{total:.2f}"` for perfect money formatting.
+- Used f"{total:.2f}" for perfect money formatting.
 
 ## Sources
 - CS50P Problem Set — Taqueria

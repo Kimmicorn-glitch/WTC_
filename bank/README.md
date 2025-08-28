@@ -8,8 +8,8 @@ Greets the user, then rewards or ignores them based on how politely they greet, 
 2. Remove any extra spaces and lowercase it for consistent checking.
 3. Apply the rules:
    - Starts with "hello" ->  $0
-   - Starts with "h" but not "hello" → $20
-   - Anything else → $100
+   - Starts with "h" but not "hello" -> $20
+   - Anything else -> $100
 4. Output the amount owed.
 
 ## Struggles

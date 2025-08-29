@@ -1,25 +1,32 @@
-def fuel():
-    while True:
-        try:
-            fraction = input("Fraction:").strip()
-            x_str , y_str = fraction.split("/")
-            x = int(x_str)
-            y = int(y_str)
+def main():
+     try: 
+        fraction = input("Fraction").strip()\
+        percentage = convert(fraction)
+        print(gauge(percent))
+         break
+except (ValueError, ZeroDivisionError)
+    continue
 
-            if y <= 0 or x < 0 or x > y:
-                continue
-
-            percent = round(x / y * 100)
-            if percent <= 1:
-                print("E")
-            elif percent >=99:
-                print("F")
-            else:
-                print(f"{percent}%")
-            break
+def convert(fraction):
+       
+            x , y = fraction.split("/")
+            x = int(x)
+            y = int(y)
+            if y == 0 or x < 0 or y < 0:
+                raise ValueError
+                
+           return round((x/y)*100)
 
         except (ValueError, ZeroDivisionError):
-            continue
-
+            raise ValueError
+            
+def gauge(percentage):           
+    if percent <= 1:
+        return "E"
+     elif percent >=99:
+        return "F"
+    else:
+        return(f"{percent}%")
+      
 if __name__=="__main__":
-    fuel()
+    main()

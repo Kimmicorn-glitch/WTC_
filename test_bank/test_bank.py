@@ -8,7 +8,7 @@ def test_hello():
 def test_h_only():
     assert value("Hey") == 20
     assert value("hi") == 20
-    assert value("how are you") == 20
+    assert value("howdy") == 20
 
 def test_other():
     assert value("greetings") == 100

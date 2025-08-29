@@ -1,10 +1,12 @@
 def main():
-    greeting = input("Greet Customer:").strip().lower()
+    greeting = input("Greet Customer:")
     print(f"${value(greeting)}")
 
 
 def value(greeting):
-
+    
+    greeting = greeting.strip().lower()
+    
     if greeting.startswith("hello"):
         return 0
     elif greeting.startswith("h"):

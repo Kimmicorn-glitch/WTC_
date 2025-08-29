@@ -15,6 +15,7 @@ def test_convert_invalid():
         convert("3/2")
     with pytest.raises(ZeroDivisionError):
         convert("1/0")
+    
 
 def test_gauge():
     assert gauge(0) == "E"
@@ -24,8 +25,6 @@ def test_gauge():
     assert gauge(50) == "50%"
 
 def test_convert_negative():
-    import pytest
-    from fuel import convert
 
     with pytest.raises(ValueError):
         convert("-1/2")

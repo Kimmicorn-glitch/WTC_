@@ -6,7 +6,7 @@ def main():
             print(gauge(percentage))
             break
         except (ValueError, ZeroDivisionError):
-            # Reprompt on invalid input
+            
             pass
 
 
@@ -16,11 +16,13 @@ def convert(fraction):
         x = int(x)
         y = int(y)
     except ValueError:
-        # not integers or wrong format
         raise ValueError
 
     if y == 0:
         raise ZeroDivisionError
+
+    if x < 0 or y< 0:
+        raise ValueError
 
     if x > y:
         raise ValueError

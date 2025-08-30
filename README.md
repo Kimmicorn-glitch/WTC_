@@ -43,4 +43,4 @@ From quirky programs like faces.py and playback.py to practical exercises like b
 
 ## Author
 **Kimberley Bezuidenhout**  
-Note: Some of these programs are simple, some are weirdly fun, and some are just me talking to Python until it does what I want. No semicolons were harmed in the making of these projects, and yes, I may have rolled my eyes at a few `ValueError`s along the way. 
+Note: Some of these programs are simple, some are weirdly fun, and some are just me talking to Python until it does what I want. No semicolons were harmed in the making of these projects, and yes, I may have rolled my eyes at a few ValueErrors along the way. 

@@ -8,17 +8,17 @@ Miniature terminal game. Included example implementation: replayable guess-my-nu
 ## How it works 
 
 
-The game first asks for a positive integer to set the range.
+1. The game first asks for a positive integer to set the range.
 
-Level = max number possible. Secret number is randomly chosen between 1 and level.
+2. Level = max number possible. Secret number is randomly chosen between 1 and level.
 
-Start guessing
+3. Start guessing
 
-You guess numbers until you get the right one.
+4. You guess numbers until you get the right one.
 
-Too small? You get told. Too big? You get told. Exactly right? Game over!
+5. Too small? You get told. Too big? You get told. Exactly right? Game over, you win!
 
-- No nonsense inputs
+- No funny inputs
 
 - If you type letters or negative numbers, the game just ignores your mischief and politely asks again.
 
@@ -30,7 +30,7 @@ Struggle: I kept mixing up where to put my random number generation.
 Solution: Moved it into the main game() function so that it resets properly when the game starts.
 
 Struggle: I almost made it overly complicated with multiple nested loops.
-Solution: Two neat loops — one for the level, one for guessing ,keeps the game tidy.
+Solution: Two neat loops. One for the level, one for guessing ,keeps the game tidy.
 
 ## Example Run
 

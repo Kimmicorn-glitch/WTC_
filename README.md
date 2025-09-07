@@ -16,7 +16,7 @@ From quirky programs like faces.py and playback.py to practical exercises like b
 
 4. **Time comparisons and formatting:** In meal.py and fuel.py, comparing hours and fractions was a puzzle. Converting everything to consistent formats saved the day.  
 
-5. **APIs and real-world data:** bitcoin.py was simultaneously thrilling and terrifying. Handling requests, exceptions, and JSON data tested my attention to detail—and my patience, only to find out there were fixed variables ("FAKE_KEY")
+5. **APIs and real-world data:** bitcoin.py was simultaneously thrilling and terrifying. Handling requests, exceptions, and JSON data tested my attention to detail and my patience, only to find out there were fixed variables ("FAKE_KEY")
 
 6. **Avoiding overcomplication:** It’s tempting to write nested loops for everything. Many times, the simplest solution (built-in functions, single loops, dictionaries) was the best.  
 
@@ -43,4 +43,4 @@ From quirky programs like faces.py and playback.py to practical exercises like b
 
 ## Author
 **Kimberley Bezuidenhout**  
-Note: Some of these programs are simple, some are weirdly fun, and some are just me talking to Python until it does what I want. No semicolons were harmed in the making of these projects, and yes, I may have rolled my eyes at a few `ValueError`s along the way. 
+Note: Some of these programs are simple, some are weirdly fun, and some are just me talking to Python until it does what I want. No semicolons were harmed in the making of these projects, and yes, I may have rolled my eyes at a few ValueErrors along the way. 

@@ -27,4 +27,8 @@ into the universal ISO format YYYY-MM-DD.
 
 ## Example
 10/9/1701 -> 1701-10-09
+<<<<<<< HEAD
 October 9, 1701 -> 1701-10-09
+=======
+October 9, 1701 -> 1701-10-09
+>>>>>>> 4e8093f5474ca1ab25b9cd33131df1c208bf3562

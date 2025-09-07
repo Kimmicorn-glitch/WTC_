@@ -18,8 +18,8 @@ Collects names until EOF, then says goodbye to everyone in one grammatically cor
 - Joining lists into a string without an extra comma before "and."
 
 ## Solutions
-- Used `try/except EOFError` to break cleanly when the user stops entering names.
-- Leveraged Python’s `join()` for comma separation, then manually handled the last "and" case.
+- Used try/except EOFError to break cleanly when the user stops entering names.
+- Leveraged Python’s join() for comma separation, then manually handled the last "and" case.
 - Tested with different numbers of names to catch edge cases.
 
 ##  Sources

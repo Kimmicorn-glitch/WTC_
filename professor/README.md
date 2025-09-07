@@ -8,7 +8,7 @@ Binds a guess game in which the computer randomly selects an integer and the use
 - Outputs formatting exactly enough to pass check50.
 
 ## How I solved it
-- Labeled a helper function to prompt and check for integer input with `try/except` loops.
+- Labeled a helper function to prompt and check for integer input with try/except loops.
 
 ## Fun fact / Humour
 My program is more helpful than some professors. 

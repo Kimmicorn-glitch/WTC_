@@ -1,7 +1,7 @@
 # plates.py
 
 ## Purpose
-Validates vanity license plates according to specific rules — because random "X7R3" nonsense just isn’t allowed.
+Validates vanity license plates according to specific rules, because random "X7R3" nonsense just isn’t allowed.
 
 ## How It Works
 1. Ask the user for a plate string.
@@ -11,12 +11,12 @@ Validates vanity license plates according to specific rules — because random "
    - Numbers, if present, must be at the end.
    - No leading zero in the number section.
    - Only alphanumeric characters allowed.
-3. Print `"Valid"` or `"Invalid"` accordingly.
+3. Print "Valid" or "Invalid" accordingly.
 
 ## Struggles
 - Checking that once a number starts, it stays to the end — my first attempt let sneaky letters slip in.
 - Accidentally allowing a number to start with zero.
-- Forgetting that Python’s `isalpha()` and `isalnum()` behave differently.
+- Forgetting that Python’s isalpha() and isalnum() behave differently.
 
 ## Solutions
 - Broke validation into separate helper checks for clarity.
@@ -27,3 +27,4 @@ Validates vanity license plates according to specific rules — because random "
 - CS50P Problem Set specification for Vanity Plates
 - [Python Official Docs — String Methods](https://docs.python.org/3/library/stdtypes.html#string-methods)
 - Multiple failed validation tests that made me suspicious of my own logic.
+- Shout out to [GeeksforGeeks](http://www.GeeksforGeeks.com)

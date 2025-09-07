@@ -3,7 +3,7 @@ from bank import value
 def test_hello():
     assert value("hello") == 0
     assert value("hello") == 0
-   # assert value("hello there") == 0
+    assert value("hello there") == 0
 
 def test_h_only():
     assert value("hey") == 20

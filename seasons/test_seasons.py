@@ -1,5 +1,5 @@
 
-import pytest  # pyright: ignore[reportMissingImports]
+import pytest  
 import sys
 import seasons
 from datetime import date, timedelta
@@ -14,7 +14,7 @@ def test_minutes_to_words():
     assert seasons.minutes_to_words(1440) == "One thousand, four hundred forty minutes"
 
 def test_invalid_date_VE():
-    bad_date = "not_a_date"
+
     with pytest.raises(SystemExit) as e:
-        seasons.parse_birthday(bad_date)
+        seasons.parse_birthday("not-a-date")
     assert str(e.value) == "Invalid date"

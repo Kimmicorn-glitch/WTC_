@@ -25,24 +25,31 @@ def num_to_words(n):
              "sixteen","seventeen","eighteen","nineteen"]
     tens = ["","","twenty","thirty","forty","fifty",
             "sixty","seventy","eighty","ninety"]
-    
-    def num_into_chunks(num):
-        if num < 10:
-            return ones[num]
-        if num < 20:
-            return teens[num-10]
-        if num < 100: 
-            return tens[num//10] + ("" if num%10==0 else "-" + ones[num%10])
-        if num < 1000: 
-            return ones[num//100] + " hundred" + ("" if num%100==0 else " " + num_into_chunks(num%100))
-        if num < 1_000_000: 
-            return num_into_chunks(num//1000) + " thousand" + ("," if num%1000==0 else ", " + num_into_chunks(num%1000))
-        if num < 1_000_000_000:    
-            return num_into_chunks(num//1_000_000) + " million" + ("," if num%1_000_000==0 else ", " + num_into_chunks(num%1_000_000))
-       
-        return str(num)
 
-    return num_into_chunks(n)
+    if n < 10:
+        return ones[n]
+    if n < 20:
+        return teens[n-10]
+    if n < 100:
+        return tens[n//10] + ("" if n % 10 == 0 else "-" + ones[n % 10])
+    if n < 1000:
+        return ones[n//100] + " hundred" + ("" if n % 100 == 0 else " " + num_to_words(n % 100))
+    if n < 1_000_000:
+        remainder = n % 1000
+        thousands = num_to_words(n // 1000) + " thousand"
+        if remainder == 0:
+            return thousands
+        else:
+            return thousands + ", " + num_to_words(remainder)
+    if n < 1_000_000_000:
+        remainder = n % 1_000_000
+        millions = num_to_words(n // 1_000_000) + " million"
+        if remainder == 0:
+            return millions
+        else:
+            return millions + ", " + num_to_words(remainder)
 
-if __name__ == "__main__":
+    return str(n)
+
+if __name__== "__main__":
     main()

@@ -1,14 +1,18 @@
 from datetime import date
 import sys
-import Inflect # pyright: ignore[reportMissingImports]
+import inflect 
+
+
+def parse_birthday(birthday_str):
+    try:
+        return date.fromisoformat(birthday_str)
+    except ValueError:
+        sys.exit("Invalid Date")
+
 
 def main():
     birthday_str = input("Enter your date of birth: ")
-    try:
-        birthday = date.fromisoformat(birthday_str)
-    except ValueError:
-        sys.exit("Invalid date")
-
+    birthday = parse_birthday(birthday_str)
     minutes = age_in_min(birthday)
     print(minutes_to_words(minutes))
 
@@ -19,7 +23,7 @@ def age_in_min(birthday):
 
 
 def minutes_to_words(minutes):
-    p = Inflect.engine() # pyright: ignore[reportUndefinedVariable]
+    p = inflect.engine() 
     words = p.number_to_words(minutes, andword="")
 
     return words.capitalize() + " minutes"

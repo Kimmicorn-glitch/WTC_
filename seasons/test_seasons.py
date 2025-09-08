@@ -1,5 +1,5 @@
 
-import pytest
+import pytest # pyright: ignore[reportMissingImports]
 import sys
 import seasons
 from datetime import date, timedelta

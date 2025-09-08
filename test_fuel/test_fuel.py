@@ -1,4 +1,4 @@
-import pytest
+import pytest # pyright: ignore[reportMissingImports]
 from fuel import convert,gauge
 
 def test_convert_valid():

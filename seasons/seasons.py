@@ -1,6 +1,6 @@
 from datetime import date
 import sys
-import inflect
+import Inflect # pyright: ignore[reportMissingImports]
 
 def main():
     birthday_str = input("Enter your date of birth: ")
@@ -19,7 +19,7 @@ def age_in_min(birthday):
 
 
 def minutes_to_words(minutes):
-    p = inflect.engine()
+    p = inflect.engine() # pyright: ignore[reportUndefinedVariable]
     words = p.number_to_words(minutes, andword="")
 
     return words.capitalize() + " minutes"

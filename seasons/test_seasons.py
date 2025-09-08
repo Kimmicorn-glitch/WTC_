@@ -13,8 +13,7 @@ def test_minutes_to_words():
     assert seasons.minutes_to_words(525600) == "Five hundred twenty-five thousand, six hundred minutes"
     assert seasons.minutes_to_words(1440) == "One thousand, four hundred forty minutes"
 
-def test_invalid_date_VE():
-
+def test_bad_date():
     with pytest.raises(SystemExit) as e:
-        seasons.parse_birthday("not-a-date")
+        seasons.get_date("not-a-date")
     assert str(e.value) == "Invalid date"

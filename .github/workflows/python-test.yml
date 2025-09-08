@@ -11,22 +11,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Checkout your repo
+      # 1. Checkout the repo
       - uses: actions/checkout@v3
 
-      # 2. Setup Python 3.10
+      # 2. Set up Python 3.10
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: 3.10
 
-      # 3. Install dependencies
+      # 3. Upgrade pip and install dependencies before pytest imports anything
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install pytest inflect
 
-      # 4. Run all tests
-      - name: Run pytest
-        run: |
-          python -m pytest -v
+      # 4. Run pytest
+      - name: Run all tests
+        run: python -m pytest -v

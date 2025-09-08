@@ -19,7 +19,7 @@ def age_in_min(birthday):
 
 
 def minutes_to_words(minutes):
-    p = inflect.engine() # pyright: ignore[reportUndefinedVariable]
+    p = Inflect.engine() # pyright: ignore[reportUndefinedVariable]
     words = p.number_to_words(minutes, andword="")
 
     return words.capitalize() + " minutes"

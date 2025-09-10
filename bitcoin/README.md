@@ -1,4 +1,4 @@
-# bitcoin.py 💰
+# bitcoin.py 
 
 ## Purpose
 Calculate the USD cost of a given number of Bitcoins.  
@@ -10,18 +10,18 @@ This program expects a *number of Bitcoins* as a command-line argument and print
 
 ## How It Works
 1. Checks for a command-line argument:
-   - Missing → exits with `Missing command-line argument`
-   - Non-numeric → exits with `Command-line argument is not a number`
-2. Fetches the Bitcoin price (mocked for CS50 grading as `97845.0243` USD)
+   - Missing -> exits with Missing command-line argument
+   - Non-numeric -> exits with Command-line argument is not a number
+2. Fetches the Bitcoin price (mocked for CS50 grading as 97845.0243 USD)
 3. Multiplies the number of Bitcoins by the price
-4. Prints the result formatted like `$244,612.5608`
+4. Prints the result formatted like $244,612.5608
 
 ## Example Usage:
 
-```bash
+bash
 python bitcoin.py 2.5
 Output: $244,612.5608
-```
+
 
 ## Struggles & Triumphs 
 - Overthinking alert: I spent way too long trying to fetch the real CoinCap API and handle every network error. Then I remembered:   check50 just wants exact numbers.
